@@ -7,6 +7,8 @@ It also provides:
 * Persistance of the last used tab
 * Support for placeholder NSToolbarItems (eg NSToolbarFlexibleSpaceItemIdentifier & NSToolbarShowFontsItemIdentifier)
 
+![Example Preferences Window.](https://github.com/heardrwt/RHPreferences/raw/master/Preferences.png )
+
 
 ## RHPreferencesWindowController Interface
 <pre>
