@@ -468,6 +468,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RHPreferences/RHPreferences-Prefix.pch";
 				INFOPLIST_FILE = "RHPreferences/RHPreferences-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -482,6 +483,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RHPreferences/RHPreferences-Prefix.pch";
 				INFOPLIST_FILE = "RHPreferences/RHPreferences-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -528,6 +530,7 @@
 				1330B783156DA90C00F2E3ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1330B7A3156DAA4D00F2E3ED /* Build configuration list for PBXNativeTarget "RHPreferencesTester" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +539,7 @@
 				1330B7A5156DAA4D00F2E3ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
