@@ -30,7 +30,7 @@
     return NSStringFromClass(self.class);
 }
 -(NSImage*)toolbarItemImage{
-    return [NSImage imageNamed:@"AccountsPreferences.png"];
+    return [NSImage imageNamed:@"AccountsPreferences"];
 }
 -(NSString*)toolbarItemLabel{
     return NSLocalizedString(@"Accounts", @"AccountsToolbarItemLabel");

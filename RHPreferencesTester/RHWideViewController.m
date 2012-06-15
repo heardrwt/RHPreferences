@@ -30,7 +30,7 @@
     return NSStringFromClass(self.class);
 }
 -(NSImage*)toolbarItemImage{
-    return [NSImage imageNamed:@"WidePreferences.png"];
+    return [NSImage imageNamed:@"WidePreferences"];
 }
 -(NSString*)toolbarItemLabel{
     return NSLocalizedString(@"Resizing", @"WideToolbarItemLabel");
