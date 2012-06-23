@@ -24,7 +24,7 @@
     return self;
 }
 
-#pragma mark - RHPreferencesWindowControllerProtocol
+#pragma mark - RHPreferencesViewControllerProtocol
 
 -(NSString*)identifier{
     return NSStringFromClass(self.class);

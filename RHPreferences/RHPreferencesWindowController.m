@@ -34,7 +34,9 @@ static NSString * const RHPreferencesWindowControllerSelectedItemIdentifier = @"
 static const CGFloat RHPreferencesWindowControllerResizeAnimationDurationPer100Pixels = 0.07f;
 
 #pragma mark - Custom Item Placeholder Controller
-@interface RHPreferencesCustomPlaceholderController : NSObject <RHPreferencesViewControllerProtocol>
+@interface RHPreferencesCustomPlaceholderController : NSObject <RHPreferencesViewControllerProtocol> {
+    NSString *_identifier;
+}
 +(id)controllerWithIdentifier:(NSString*)identifier;
 @property (readwrite, nonatomic, retain) NSString *identifier;
 @end
