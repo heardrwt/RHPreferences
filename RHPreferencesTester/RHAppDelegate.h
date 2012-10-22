@@ -10,7 +10,8 @@
 #import <RHPreferences/RHPreferences.h>
 
 @interface RHAppDelegate : NSObject <NSApplicationDelegate> {
-
+    
+    NSWindow *_window;
     RHPreferencesWindowController *_preferencesWindowController;
 }
 
