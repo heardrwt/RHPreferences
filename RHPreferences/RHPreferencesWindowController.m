@@ -194,7 +194,6 @@ static const CGFloat RHPreferencesWindowControllerResizeAnimationDurationPer100P
         }   
                 
         //resize to Preferred window size for given view (duration is determined by difference between current and new sizes)
-        
         float hDifference = fabs(new.view.bounds.size.height - old.view.bounds.size.height);
         float wDifference = fabs(new.view.bounds.size.width - old.view.bounds.size.width);
         float difference = MAX(hDifference, wDifference);
@@ -205,17 +204,19 @@ static const CGFloat RHPreferencesWindowControllerResizeAnimationDurationPer100P
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
 
-            [self.window.contentView addSubview:new.view];
-            
-            if ([new respondsToSelector:@selector(viewDidAppear)]){
-                [(id)new viewDidAppear];
-            }
+            //make sure our "new" vc is still the selected vc before we add it as a subview, otherwise it's possible we could add more than one vc to the window. (the user has likely clicked to another tab during resizing.)
+            if (_selectedViewController == new){
+                [self.window.contentView addSubview:new.view];
+                
+                if ([new respondsToSelector:@selector(viewDidAppear)]){
+                    [(id)new viewDidAppear];
+                }
 
-            //if there is a initialKeyView set it as key
-            if ([new respondsToSelector:@selector(initialKeyView)]){
-                [[new initialKeyView] becomeFirstResponder];
+                //if there is a initialKeyView set it as key
+                if ([new respondsToSelector:@selector(initialKeyView)]){
+                    [[new initialKeyView] becomeFirstResponder];
+                }
             }
-
         });
         
 
