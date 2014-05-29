@@ -457,13 +457,10 @@ static const CGFloat RHPreferencesWindowControllerResizeAnimationDurationPer100P
     if (_selectedViewController){
         return [_selectedViewController commitEditing];
     }
-    
-    return YES;
-}
-
--(void)windowWillClose:(NSNotification *)notification{
     // steal firstResponder away from text fields, to commit editing to bindings
     [self.window makeFirstResponder:self];
+    
+    return YES;
 }
 
 #pragma mark - NSToolbarDelegate
