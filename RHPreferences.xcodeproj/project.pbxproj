@@ -19,7 +19,7 @@
 		1330B79F156DAA4D00F2E3ED /* RHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1330B79E156DAA4D00F2E3ED /* RHAppDelegate.m */; };
 		1330B7A2156DAA4D00F2E3ED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B7A0156DAA4D00F2E3ED /* MainMenu.xib */; };
 		1330B7A6156DAACC00F2E3ED /* RHPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1330B76C156DA90C00F2E3ED /* RHPreferences.framework */; };
-		1330B7AA156DAAEC00F2E3ED /* RHPreferences.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1330B76C156DA90C00F2E3ED /* RHPreferences.framework */; };
+		1330B7AA156DAAEC00F2E3ED /* RHPreferences.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1330B76C156DA90C00F2E3ED /* RHPreferences.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1330B7AB156DAB6B00F2E3ED /* RHPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 1330B77C156DA90C00F2E3ED /* RHPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1330B7B8156DAE8D00F2E3ED /* RHAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1330B7B6156DAE8D00F2E3ED /* RHAccountsViewController.m */; };
 		1330B7B9156DAE8D00F2E3ED /* RHAccountsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1330B7B7156DAE8D00F2E3ED /* RHAccountsViewController.xib */; };
@@ -298,7 +298,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RH;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Richard Heard";
 			};
 			buildConfigurationList = 1330B765156DA90B00F2E3ED /* Build configuration list for PBXProject "RHPreferences" */;
@@ -423,8 +423,10 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -456,9 +458,11 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
